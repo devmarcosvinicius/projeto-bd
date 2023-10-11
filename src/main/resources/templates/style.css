@@ -1,0 +1,150 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: auto;
+}
+
+.navbar {
+    background-color: #023b6f;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #023b6f;
+    color: #fff;
+    padding-bottom: 10rem;
+}
+
+footer hr {
+    width: 70%;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.footer-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Index */
+
+.banner {
+    background-color: #023b6f;
+    color: #fff;
+}
+
+.banner .btn {
+    color: #fff;
+}
+
+.banner-img {
+    width: 500px;
+}
+
+.cursos {
+    margin-bottom: 10rem;
+}
+
+.cursos h2 {
+    font-size: 2rem;
+    color: #023b6f;
+    font-weight: bold;
+    margin: 5rem 0;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Cadastrar Alunos */
+
+.cadastro-formulario {
+    background-color: #023b6f;
+}
+
+.cadastro-formulario h2 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.cadastro-formulario p {
+    color: #2d9ace;
+}
+
+.formulario {
+    background-color: #f5f7fa;
+}
+
+.formulario .container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0 4rem;
+}
+
+.formulario .container h3 {
+    color: #023b6f;
+    font-weight: bold;
+}
+
+.formulario .container p {
+    color: #023b6f;
+}
+
+.form-control, select {
+    margin-bottom: 1rem;
+}
+
+form .btn {
+    background-color: #c7c7c7;
+    border-radius: 2px;
+    padding: .5rem 1rem;
+}
+
+form .btn:hover {
+    transform: scale(1.02);
+    transition: ease-in-out;
+    background-color: #c7c7c7;
+}
+
+.entrar {
+    text-decoration: none;
+    color: #023b6f;
+}
+
+.entrar:hover {
+    text-decoration: underline;
+}

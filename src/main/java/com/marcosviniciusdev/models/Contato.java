@@ -27,6 +27,6 @@ public class Contato {
 
     @ManyToOne
     @JoinColumn(name = "id")
-    private Tipo_Contato tipo_contato;
+    private TipoContato tipo_contato;
 
 }

@@ -20,6 +20,11 @@ public class Curso {
     @Column(unique = true)
     private String nome;
     private String descricao;
+
+    @JoinColumn(name = "id")
     private Departamento departamento;
+
+    @ManyToOne
+    private Aluno aluno;
 
 }
