@@ -3,7 +3,7 @@ package com.marcosviniciusdev.models;
 import jakarta.persistence.*;
 
 @Entity
-public class Numero_Telefone {
+public class Numero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

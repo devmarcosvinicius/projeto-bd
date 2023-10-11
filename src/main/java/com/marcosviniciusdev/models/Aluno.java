@@ -42,6 +42,6 @@ public class Aluno {
 
     private Sexo sexo;
 
-    private Status_Aluno status_aluno;
+    private Status status_aluno;
 
 }
