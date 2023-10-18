@@ -1,9 +1,9 @@
 package com.marcosviniciusdev.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
-import java.util.List;
-
+@Data
 @Entity
 public class SalaTurma {
 
@@ -11,12 +11,10 @@ public class SalaTurma {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToMany
-    @JoinColumn(name = "id")
-    private List<Sala> sala;
+    @ManyToOne
+    private Sala sala;
 
-    @OneToMany
-    @JoinColumn(name = "id")
-    private List<Turma> turma;
+    @ManyToOne
+    private Turma turma;
 
 }

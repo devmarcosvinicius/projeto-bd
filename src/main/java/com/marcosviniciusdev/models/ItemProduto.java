@@ -1,10 +1,9 @@
 package com.marcosviniciusdev.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 public class ItemProduto {
 
@@ -12,8 +11,10 @@ public class ItemProduto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @OneToOne
     private Almoxarifado almoxarifado;
 
+    @ManyToOne
     private TipoDeProduto tipoDeProduto;
 
 }

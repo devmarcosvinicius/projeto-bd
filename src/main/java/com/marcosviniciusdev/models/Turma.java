@@ -1,12 +1,11 @@
 package com.marcosviniciusdev.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
 @Entity
 public class Turma {
 
@@ -17,9 +16,13 @@ public class Turma {
     private Date data_inicio;
     private Date data_fim;
 
+    @ManyToOne
     private Curso curso;
 
+    @ManyToOne
     private Turno turno;
 
+    @ManyToOne
     private Professor professor;
+
 }

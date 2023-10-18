@@ -1,10 +1,9 @@
 package com.marcosviniciusdev.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 public class AlunoDisciplina {
 
@@ -14,7 +13,10 @@ public class AlunoDisciplina {
     private int frequencia;
     private double nota;
 
+    @ManyToOne
     private Disciplina disciplina;
+
+    @ManyToOne
     private Historico historico;
 
 }

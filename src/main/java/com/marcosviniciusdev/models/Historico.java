@@ -1,12 +1,11 @@
 package com.marcosviniciusdev.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
 @Entity
 public class Historico {
 
@@ -17,6 +16,7 @@ public class Historico {
     private Date data_inicio;
     private Date data_fim;
 
+    @ManyToOne
     private Aluno aluno;
 
 }

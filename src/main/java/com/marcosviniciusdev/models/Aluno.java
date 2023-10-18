@@ -8,7 +8,6 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Getter
@@ -39,14 +38,15 @@ public class Aluno {
     private String nome_pai;
     private String nome_mae;
 
-    @OneToMany(mappedBy = "aluno")
-    private List<Curso> curso;
+    @ManyToOne
+    private Curso curso;
 
-
-
+    @ManyToOne
     private Sexo sexo;
 
-    @JoinColumn(name = "id")
-    private Status status_aluno;
+    @ManyToOne
+    private Status status;
+
+
 
 }

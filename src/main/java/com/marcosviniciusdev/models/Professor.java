@@ -1,7 +1,9 @@
 package com.marcosviniciusdev.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 public class Professor {
 
@@ -15,6 +17,7 @@ public class Professor {
     private String nome;
     private String sobrenome;
 
+    @ManyToOne
     private Departamento departamento;
 
 }

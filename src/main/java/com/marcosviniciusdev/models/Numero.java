@@ -1,7 +1,9 @@
 package com.marcosviniciusdev.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 public class Numero {
 
@@ -12,6 +14,7 @@ public class Numero {
     @Column(unique = true)
     private String numero;
 
+    @ManyToOne
     private Professor professor;
 
 }

@@ -4,7 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
 
+@Data
 @Entity
 public class Sala {
 
@@ -12,4 +14,5 @@ public class Sala {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String descricao;
+
 }
